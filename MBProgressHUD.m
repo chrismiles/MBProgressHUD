@@ -238,7 +238,6 @@
 	}
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceOrientationDidChange:) 
 												 name:UIDeviceOrientationDidChangeNotification object:nil];
-	
 	return me;
 }
 
@@ -601,15 +600,14 @@
 - (void)setTransformForCurrentOrientation:(BOOL)animated {
 	UIDeviceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
 	NSInteger degrees = 0;
-	
 	if (UIInterfaceOrientationIsLandscape(orientation)) {
 		if (orientation == UIInterfaceOrientationLandscapeLeft) { degrees = -90; } 
 		else { degrees = 90; }
+		self.bounds = CGRectMake(self.frame.origin.x,self.frame.origin.y,self.bounds.size.height,self.bounds.size.width);
 	} else {
 		if (orientation == UIInterfaceOrientationPortraitUpsideDown) { degrees = 180; } 
 		else { degrees = 0; }
 	}
-	
 	rotationTransform = CGAffineTransformMakeRotation(RADIANS(degrees));
 
 	if (animated) {

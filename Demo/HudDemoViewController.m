@@ -184,7 +184,8 @@
     HUD.delegate = self;
 	
     HUD.labelText = @"Loading";
-//	HUD.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
+	// Uncomment to test background color / window size etc.
+	// HUD.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
 
     // Show the HUD while the provided method executes in a new thread
     [HUD showWhileExecuting:@selector(myTask) onTarget:self withObject:nil animated:YES];

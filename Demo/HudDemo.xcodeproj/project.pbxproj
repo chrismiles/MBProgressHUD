@@ -7,41 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* HudDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* HudDemoAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2899E5220DE3E06400AC0155 /* HudDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* HudDemoViewController.xib */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		28D7ACF80DDB3853001CB0EB /* HudDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* HudDemoViewController.m */; };
-		D22F7D810F85241C00550BB3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D22F7D800F85241C00550BB3 /* MBProgressHUD.m */; };
-		D277FDB311FC834200304321 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D277FDB211FC834200304321 /* Default.png */; };
-		D277FDB911FC877E00304321 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D277FDB711FC877E00304321 /* Icon.png */; };
-		D277FDBA11FC877E00304321 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D277FDB811FC877E00304321 /* Icon@2x.png */; };
-		D2F88CD6115E9F7F00E6DB82 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = D2F88CD5115E9F7F00E6DB82 /* 37x-Checkmark.png */; };
+		2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E326111B887F00E27156 /* AppDelegate_iPhone.m */; };
+		2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E327111B887F00E27156 /* MainWindow_iPhone.xib */; };
+		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
+		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		902305D7130B2732001F8FBA /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 902305D6130B2732001F8FBA /* 37x-Checkmark.png */; };
+		9064B6BC130B2767004347CE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9064B6BB130B2767004347CE /* MBProgressHUD.m */; };
+		90B33E91130B217C00AA8FBD /* HudDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90B33E90130B217C00AA8FBD /* HudDemoViewController.xib */; };
+		90B33E94130B218C00AA8FBD /* HudDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B33E93130B218C00AA8FBD /* HudDemoViewController.m */; };
+		90B33E9A130B21A700AA8FBD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B33E96130B21A700AA8FBD /* Icon.png */; };
+		90B33E9B130B21A700AA8FBD /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B33E97130B21A700AA8FBD /* Icon@2x.png */; };
+		90B33E9C130B21A700AA8FBD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B33E98130B21A700AA8FBD /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* HudDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudDemoAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* HudDemoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudDemoAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* HudDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HudDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E5210DE3E06400AC0155 /* HudDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HudDemoViewController.xib; sourceTree = "<group>"; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		28D7ACF60DDB3853001CB0EB /* HudDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudDemoViewController.h; sourceTree = "<group>"; };
-		28D7ACF70DDB3853001CB0EB /* HudDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudDemoViewController.m; sourceTree = "<group>"; usesTabs = 1; };
-		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2860E325111B887F00E27156 /* AppDelegate_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_iPhone.h; sourceTree = "<group>"; };
+		2860E326111B887F00E27156 /* AppDelegate_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_iPhone.m; sourceTree = "<group>"; };
+		2860E327111B887F00E27156 /* MainWindow_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		2860E32B111B888700E27156 /* AppDelegate_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_iPad.h; sourceTree = "<group>"; };
+		2860E32C111B888700E27156 /* AppDelegate_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_iPad.m; sourceTree = "<group>"; };
+		2860E32D111B888700E27156 /* MainWindow_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow_iPad.xib; sourceTree = "<group>"; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HudDemo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudDemo_Prefix.pch; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D22F7D7F0F85241C00550BB3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../MBProgressHUD.h; sourceTree = SOURCE_ROOT; };
-		D22F7D800F85241C00550BB3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../../MBProgressHUD.m; sourceTree = "<group>"; };
-		D277FDB211FC834200304321 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		D277FDB711FC877E00304321 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		D277FDB811FC877E00304321 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		D2F88CD5115E9F7F00E6DB82 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "37x-Checkmark.png"; path = "Images/37x-Checkmark.png"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* HudDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HudDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		902305D6130B2732001F8FBA /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "37x-Checkmark.png"; path = "Images/37x-Checkmark.png"; sourceTree = "<group>"; };
+		9064B6BA130B2767004347CE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../MBProgressHUD.h; sourceTree = SOURCE_ROOT; };
+		9064B6BB130B2767004347CE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../MBProgressHUD.m; sourceTree = SOURCE_ROOT; };
+		90B33E90130B217C00AA8FBD /* HudDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HudDemoViewController.xib; sourceTree = "<group>"; };
+		90B33E92130B218C00AA8FBD /* HudDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudDemoViewController.h; sourceTree = "<group>"; };
+		90B33E93130B218C00AA8FBD /* HudDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudDemoViewController.m; sourceTree = "<group>"; };
+		90B33E96130B21A700AA8FBD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		90B33E97130B21A700AA8FBD /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		90B33E98130B21A700AA8FBD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,26 +56,13 @@
 			files = (
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D22F7D7F0F85241C00550BB3 /* MBProgressHUD.h */,
-				D22F7D800F85241C00550BB3 /* MBProgressHUD.m */,
-				1D3623240D0F684500981E51 /* HudDemoAppDelegate.h */,
-				1D3623250D0F684500981E51 /* HudDemoAppDelegate.m */,
-				28D7ACF60DDB3853001CB0EB /* HudDemoViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* HudDemoViewController.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,12 +71,47 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2860E324111B887F00E27156 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				2860E325111B887F00E27156 /* AppDelegate_iPhone.h */,
+				2860E326111B887F00E27156 /* AppDelegate_iPhone.m */,
+				2860E327111B887F00E27156 /* MainWindow_iPhone.xib */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		2860E32A111B888700E27156 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				2860E32B111B888700E27156 /* AppDelegate_iPad.h */,
+				2860E32C111B888700E27156 /* AppDelegate_iPad.m */,
+				2860E32D111B888700E27156 /* MainWindow_iPad.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		28EEBF621118D79A00187D67 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9064B6BA130B2767004347CE /* MBProgressHUD.h */,
+				9064B6BB130B2767004347CE /* MBProgressHUD.m */,
+				90B33E95130B21A700AA8FBD /* Images */,
+				90B33E92130B218C00AA8FBD /* HudDemoViewController.h */,
+				90B33E93130B218C00AA8FBD /* HudDemoViewController.m */,
+				90B33E90130B217C00AA8FBD /* HudDemoViewController.xib */,
+				8D1107310486CEB800E47090 /* HudDemo-Info.plist */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				080E96DDFE201D6D7F000001 /* Classes */,
+				2860E32A111B888700E27156 /* iPad */,
+				2860E324111B887F00E27156 /* iPhone */,
+				28EEBF621118D79A00187D67 /* Shared */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -100,44 +127,25 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
-		29B97317FDCFA39411CA2CEA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D277FDBF11FC880100304321 /* UI */,
-				D277FDBD11FC879500304321 /* Images */,
-				8D1107310486CEB800E47090 /* Info.plist */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
-				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D277FDBD11FC879500304321 /* Images */ = {
+		90B33E95130B21A700AA8FBD /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D277FDB711FC877E00304321 /* Icon.png */,
-				D277FDB811FC877E00304321 /* Icon@2x.png */,
-				D277FDB211FC834200304321 /* Default.png */,
-				D2F88CD5115E9F7F00E6DB82 /* 37x-Checkmark.png */,
+				902305D6130B2732001F8FBA /* 37x-Checkmark.png */,
+				90B33E96130B21A700AA8FBD /* Icon.png */,
+				90B33E97130B21A700AA8FBD /* Icon@2x.png */,
+				90B33E98130B21A700AA8FBD /* Default.png */,
 			);
 			name = Images;
-			sourceTree = "<group>";
-		};
-		D277FDBF11FC880100304321 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				2899E5210DE3E06400AC0155 /* HudDemoViewController.xib */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-			);
-			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,12 +197,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				2899E5220DE3E06400AC0155 /* HudDemoViewController.xib in Resources */,
-				D2F88CD6115E9F7F00E6DB82 /* 37x-Checkmark.png in Resources */,
-				D277FDB311FC834200304321 /* Default.png in Resources */,
-				D277FDB911FC877E00304321 /* Icon.png in Resources */,
-				D277FDBA11FC877E00304321 /* Icon@2x.png in Resources */,
+				2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */,
+				2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */,
+				90B33E91130B217C00AA8FBD /* HudDemoViewController.xib in Resources */,
+				90B33E9A130B21A700AA8FBD /* Icon.png in Resources */,
+				90B33E9B130B21A700AA8FBD /* Icon@2x.png in Resources */,
+				90B33E9C130B21A700AA8FBD /* Default.png in Resources */,
+				902305D7130B2732001F8FBA /* 37x-Checkmark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,9 +215,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* HudDemoAppDelegate.m in Sources */,
-				28D7ACF80DDB3853001CB0EB /* HudDemoViewController.m in Sources */,
-				D22F7D810F85241C00550BB3 /* MBProgressHUD.m in Sources */,
+				2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */,
+				2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */,
+				90B33E94130B218C00AA8FBD /* HudDemoViewController.m in Sources */,
+				9064B6BC130B2767004347CE /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +234,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HudDemo_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "HudDemo-Info.plist";
 				PRODUCT_NAME = HudDemo;
 			};
 			name = Debug;
@@ -236,8 +246,9 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HudDemo_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "HudDemo-Info.plist";
 				PRODUCT_NAME = HudDemo;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -247,13 +258,12 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -263,11 +273,13 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
