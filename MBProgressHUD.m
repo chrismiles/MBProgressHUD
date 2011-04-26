@@ -51,6 +51,7 @@
 @synthesize height;
 @synthesize xOffset;
 @synthesize yOffset;
+@synthesize margin;
 
 @synthesize graceTime;
 @synthesize minShowTime;
@@ -181,8 +182,8 @@
 #pragma mark -
 #pragma mark Constants
 
-#define MARGIN 20.0
-#define PADDING 4.0
+#define DEFAULT_MARGIN 20.0
+#define DEFAULT_PADDING 4.0
 
 #define LABELFONTSIZE 16.0
 #define LABELDETAILSFONTSIZE 12.0
@@ -256,6 +257,7 @@
 		self.graceTime = 0.0;
 		self.minShowTime = 0.0;
 		self.removeFromSuperViewOnHide = NO;
+		self.margin = DEFAULT_MARGIN;
 		
 		self.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
 		
@@ -301,8 +303,8 @@
 	
     // Compute HUD dimensions based on indicator size (add margin to HUD border)
     CGRect indFrame = indicator.bounds;
-    self.width = indFrame.size.width + 2 * MARGIN;
-    self.height = indFrame.size.height + 2 * MARGIN;
+    self.width = indFrame.size.width + 2 * self.margin;
+    self.height = indFrame.size.height + 2 * self.margin;
 	
     // Position the indicator
     indFrame.origin.x = floor((frame.size.width - indFrame.size.width) / 2) + self.xOffset;
@@ -317,11 +319,11 @@
         // Compute label dimensions based on font metrics if size is larger than max then clip the label width
         float lHeight = dims.height;
         float lWidth;
-        if (dims.width <= (frame.size.width - 2 * MARGIN)) {
+        if (dims.width <= (frame.size.width - 2 * self.margin)) {
             lWidth = dims.width;
         }
         else {
-            lWidth = frame.size.width - 4 * MARGIN;
+            lWidth = frame.size.width - 4 * self.margin;
         }
 		
         // Set label properties
@@ -334,18 +336,18 @@
         label.text = self.labelText;
 		
         // Update HUD size
-        if (self.width < (lWidth + 2 * MARGIN)) {
-            self.width = lWidth + 2 * MARGIN;
+        if (self.width < (lWidth + 2 * self.margin)) {
+            self.width = lWidth + 2 * self.margin;
         }
-        self.height = self.height + lHeight + PADDING;
+        self.height = self.height + lHeight + DEFAULT_PADDING;
 		
         // Move indicator to make room for the label
-        indFrame.origin.y -= (floor(lHeight / 2 + PADDING / 2));
+        indFrame.origin.y -= (floor(lHeight / 2 + DEFAULT_PADDING / 2));
         indicator.frame = indFrame;
 		
         // Set the label position and dimensions
         CGRect lFrame = CGRectMake(floor((frame.size.width - lWidth) / 2) + xOffset,
-                                   floor(indFrame.origin.y + indFrame.size.height + PADDING),
+                                   floor(indFrame.origin.y + indFrame.size.height + DEFAULT_PADDING),
                                    lWidth, lHeight);
         label.frame = lFrame;
 		
@@ -358,11 +360,11 @@
 			
             // Compute label dimensions based on font metrics if size is larger than max then clip the label width
             lHeight = dims.height;
-            if (dims.width <= (frame.size.width - 2 * MARGIN)) {
+            if (dims.width <= (frame.size.width - 2 * self.margin)) {
                 lWidth = dims.width;
             }
             else {
-                lWidth = frame.size.width - 4 * MARGIN;
+                lWidth = frame.size.width - 4 * self.margin;
             }
 			
             // Set label properties
@@ -376,21 +378,21 @@
 			
             // Update HUD size
             if (self.width < lWidth) {
-                self.width = lWidth + 2 * MARGIN;
+                self.width = lWidth + 2 * self.margin;
             }
-            self.height = self.height + lHeight + PADDING;
+            self.height = self.height + lHeight + DEFAULT_PADDING;
 			
             // Move indicator to make room for the new label
-            indFrame.origin.y -= (floor(lHeight / 2 + PADDING / 2));
+            indFrame.origin.y -= (floor(lHeight / 2 + DEFAULT_PADDING / 2));
             indicator.frame = indFrame;
 			
             // Move first label to make room for the new label
-            lFrame.origin.y -= (floor(lHeight / 2 + PADDING / 2));
+            lFrame.origin.y -= (floor(lHeight / 2 + DEFAULT_PADDING / 2));
             label.frame = lFrame;
 			
             // Set label position and dimensions
             CGRect lFrameD = CGRectMake(floor((frame.size.width - lWidth) / 2) + xOffset,
-                                        lFrame.origin.y + lFrame.size.height + PADDING, lWidth, lHeight);
+                                        lFrame.origin.y + lFrame.size.height + DEFAULT_PADDING, lWidth, lHeight);
             detailsLabel.frame = lFrameD;
 			
             [self addSubview:detailsLabel];
