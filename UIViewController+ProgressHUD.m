@@ -77,7 +77,12 @@ static char progresshud_key;	// unique address for associative object key
     }
 }
 
-- (void)updateProgressHUDForErrorMessage:(NSString *)message
+- (void)delayedDismiss
+{
+    [self dismissHUDAnimated:YES];
+}
+
+- (void)updateProgressHUDForErrorMessage:(NSString *)message dismissAfter:(NSTimeInterval)seconds
 {
     if (nil == message || [message length] == 0) {
 	message = @"Failed.";
@@ -92,7 +97,16 @@ static char progresshud_key;	// unique address for associative object key
 	progressHUD.labelText = @"×";
 	progressHUD.labelFont = [UIFont boldSystemFontOfSize:48.0];
 	[progressHUD show:NO];
+	
+	if (seconds != 0.0) {
+	    [self performSelector:@selector(delayedDismiss) withObject:nil afterDelay:seconds];
+	}
     }
+}
+
+- (void)updateProgressHUDForErrorMessage:(NSString *)message
+{
+    [self updateProgressHUDForErrorMessage:message dismissAfter:0];
 }
 
 - (void)updateProgressHUDForSuccessMessage:(NSString *)message

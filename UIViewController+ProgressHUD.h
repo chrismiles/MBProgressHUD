@@ -31,10 +31,14 @@
 @interface UIViewController ( ProgressHUD )
 
 - (MBProgressHUD *)currentProgressHUD;
+
 - (void)showProgressHUDOverWindowWithMessage:(NSString *)message animated:(BOOL)animated;
 - (void)showProgressHUDWithMessage:(NSString *)message inView:(UIView *)parentView animated:(BOOL)animated;
-- (void)dismissHUDAnimated:(BOOL)animated;
-- (void)updateProgressHUDForErrorMessage:(NSString *)message;
+
 - (void)updateProgressHUDForSuccessMessage:(NSString *)message;
+- (void)updateProgressHUDForErrorMessage:(NSString *)message;
+- (void)updateProgressHUDForErrorMessage:(NSString *)message dismissAfter:(NSTimeInterval)seconds;
+
+- (void)dismissHUDAnimated:(BOOL)animated;
 
 @end
