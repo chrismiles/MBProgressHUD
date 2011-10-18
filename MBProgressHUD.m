@@ -2,6 +2,7 @@
 // MBProgressHUD.m
 // Version 0.4
 // Created by Matej Bukovinski on 2.4.09.
+// Updated by Chris Miles 2011
 //
 
 #import "MBProgressHUD.h"
@@ -600,7 +601,7 @@
 }
 
 - (void)setTransformForCurrentOrientation:(BOOL)animated {
-	UIDeviceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+	UIDeviceOrientation orientation = (UIDeviceOrientation)[UIApplication sharedApplication].statusBarOrientation;
 	NSInteger degrees = 0;
 	if (UIInterfaceOrientationIsLandscape(orientation)) {
 		if (orientation == UIInterfaceOrientationLandscapeLeft) { degrees = -90; } 
